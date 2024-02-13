@@ -1,409 +1,427 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.header {
-    background-color: rgb(255, 113, 113);
-    width: 100%;
-    font-weight: bold;
-}
-
-.header>div {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.header-details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    align-items: center;
-    letter-spacing: 3px;
-}
-
-.header-details>div:hover {
-    color: aliceblue;
-    text-decoration: underline;
-}
-
-@media screen and (max-width: 580px) {
-    .header {
-        width: 100%;
-        font-size: 7px;
-        font-weight: 700;
-    }
-    .header>div {
-        width: 100%;
-        padding: 8px 10px;
-    }
-    .header-details {
-        justify-content: space-between;
+    * {
+        box-sizing: border-box;
+        margin: 0;
         padding: 0;
     }
-    .mobile {
-        padding-left: 10px;
-    }
-    .mobile>img {
-        width: 20px;
-        height: 20px
-    }
-}
-
-@media screen and (max-width: 290px) {
+    
     .header {
+        background-color: rgb(255, 113, 113);
         width: 100%;
-        font-size: 4px;
-        font-weight: 700;
+        font-weight: bold;
     }
+    
     .header>div {
+        display: flex;
+        flex-direction: row;
         width: 100%;
-        padding: 4px 8px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
     }
-    .mobile {
-        padding-left: 8px;
+    
+    .header-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        letter-spacing: 3px;
     }
-    .mobile>img {
-        width: 15px;
-        height: 15px
+    
+    .header-details>div:nth-child(2),
+    .header-details>div:nth-child(4),
+    .header-details>div:nth-child(6) {
+        /* task 3 */
+        color: blue;
     }
-}
-
-
-/* main css */
-
-.main {
-    width: 100%;
-}
-
-
-/* about css */
-
-.about {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-image: linear-gradient(90deg, rgb(255, 246, 173), rgb(232, 176, 208));
-}
-
-.about-left {
-    padding: 40px 100px;
-}
-
-.about-left>h1 {
-    font-weight: 700;
-    font-size: 50px;
-    margin-bottom: 50px;
-    font-family: sans-serif;
-    letter-spacing: 3px;
-}
-
-.about-left>p {
-    margin-bottom: 50px;
-    font-family: sans-serif;
-    font-weight: lighter;
-}
-
-.about-left>button {
-    background-color: rgb(255, 113, 113);
-    color: aliceblue;
-    border: none;
-    outline: none;
-    width: 165px;
-    height: 35px;
-}
-
-.about-left>button:hover {
-    color: rgb(255, 113, 113);
-    background-color: aliceblue;
-}
-
-.about-right>img {
-    width: 600px;
-    height: 600px;
-    object-fit: cover;
-}
-
-@media screen and (max-width: 912px) {
+    
+    .header-details>div:hover {
+        color: aliceblue;
+        text-decoration: underline;
+    }
+    
+    @media screen and (max-width: 580px) {
+        .header {
+            width: 100%;
+            font-size: 7px;
+            font-weight: 700;
+        }
+        .header>div {
+            width: 100%;
+            padding: 8px 10px;
+        }
+        .header-details {
+            justify-content: space-between;
+            padding: 0;
+        }
+        .mobile {
+            padding-left: 10px;
+        }
+        .mobile>img {
+            width: 20px;
+            height: 20px
+        }
+    }
+    
+    @media screen and (max-width: 290px) {
+        .header {
+            width: 100%;
+            font-size: 4px;
+            font-weight: 700;
+        }
+        .header>div {
+            width: 100%;
+            padding: 4px 8px;
+        }
+        .mobile {
+            padding-left: 8px;
+        }
+        .mobile>img {
+            width: 15px;
+            height: 15px
+        }
+    }
+    /* main css */
+    
+    .main {
+        width: 100%;
+    }
+    /* about css */
+    
     .about {
         width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-image: linear-gradient(90deg, rgb(255, 246, 173), rgb(232, 176, 208));
     }
+    
     .about-left {
-        padding: 15px 40px;
+        padding: 40px 100px;
     }
+    
     .about-left>h1 {
-        font-weight: 900;
-        font-size: 25px;
-        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 50px;
+        margin-bottom: 50px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
     }
+    
     .about-left>p {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        font-family: sans-serif;
+        font-weight: lighter;
     }
-    .about-right>img {
-        width: 400px;
-        height: 400px;
-        object-fit: cover;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .about {
-        width: 100%;
-    }
-    .about-left {
-        padding: 8px 20px;
-    }
-    .about-left>h1 {
-        font-weight: 900;
-        font-size: 12px;
-        margin-bottom: 15px;
-        margin-top: 15px;
-    }
-    .about-left>p {
-        font-size: 10px;
-        margin-bottom: 15px;
-    }
-    .about-right>img {
-        width: 200px;
-        height: 300px;
-        object-fit: cover;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .about {
-        width: 100%;
-    }
-    .about-left {
-        padding: 4px 10px;
-    }
-    .about-left>h1 {
-        font-weight: 900;
-        font-size: 6px;
-        margin-bottom: 8px;
-        margin-top: 8px;
-    }
-    .about-left>p {
-        font-size: 6px;
-        margin-bottom: 8px;
-    }
+    
     .about-left>button {
-        width: 100px;
-        height: 25px;
+        background-color: rgb(255, 113, 113);
+        color: aliceblue;
+        border: none;
+        outline: none;
+        width: 165px;
+        height: 35px;
     }
+    
+    .about-left>button:hover {
+        color: rgb(255, 113, 113);
+        background-color: aliceblue;
+    }
+    
     .about-right>img {
-        width: 150px;
-        height: 200px;
+        width: 600px;
+        height: 600px;
         object-fit: cover;
     }
-}
-
-
-/* collection food css */
-
-.collectionfood {
-    padding: 50px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(135deg, rgb(255, 246, 173), rgb(232, 176, 208));
-}
-
-.collectionfood-left {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-    padding: 10px 50px 10px 0px;
-}
-
-.img1,
-.img2 {
-    height: 200px;
-}
-
-.img3 {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.collectionfood-left img {
-    object-fit: cover;
-}
-
-.collectionfood-right {
-    width: 400px;
-    height: 240px;
-    background-color: rgb(255, 113, 113);
-    padding: 20px;
-}
-
-.collectionfood-right>h5 {
-    margin-bottom: 20px;
-}
-
-.collectionfood-right>h2 {
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 40px;
-}
-
-.collectionfood-right>button {
-    background-color: rgb(255, 113, 113);
-    outline: none;
-    border: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.collectionfood-right>button:hover {
-    color: aliceblue;
-}
-
-.collectionfood-right>button img {
-    padding-left: 5px;
-}
-
-@media screen and (max-width: 820px) {
+    
+    @media screen and (min-width: 800px) and (max-width: 1280px) {
+        /* task 1 */
+        .about-left>button {
+            background-color: yellow;
+            color: aliceblue;
+            border: none;
+            outline: none;
+        }
+    }
+    
+    @media screen and (max-width: 912px) {
+        .about {
+            width: 100%;
+        }
+        .about-left {
+            padding: 15px 40px;
+        }
+        .about-left>h1 {
+            font-weight: 900;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+        .about-left>p {
+            margin-bottom: 30px;
+        }
+        .about-right>img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+    
+    @media screen and (max-width: 580px) {
+        .about {
+            width: 100%;
+        }
+        .about-left {
+            padding: 8px 20px;
+        }
+        .about-left>h1 {
+            font-weight: 900;
+            font-size: 12px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+        .about-left>p {
+            font-size: 10px;
+            margin-bottom: 15px;
+        }
+        .about-right>img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        .about {
+            width: 100%;
+        }
+        .about-left {
+            padding: 4px 10px;
+        }
+        .about-left>h1 {
+            font-weight: 900;
+            font-size: 6px;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+        .about-left>p {
+            font-size: 6px;
+            margin-bottom: 8px;
+        }
+        .about-left>button {
+            width: 100px;
+            height: 25px;
+        }
+        .about-right>img {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+    /* collection food css */
+    
     .collectionfood {
+        padding: 50px;
         width: 100%;
-        padding-left: 30px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(135deg, rgb(255, 246, 173), rgb(232, 176, 208));
     }
+    
     .collectionfood-left {
-        padding: 10px 30px 10px 0px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        padding: 10px 50px 10px 0px;
     }
-    .collectionfood-right {
-        width: 300px;
+    
+    .img1,
+    .img2 {
         height: 200px;
-        padding: 15px;
     }
+    
+    .img3 {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    
+    .collectionfood-left img {
+        object-fit: cover;
+    }
+    
+    .collectionfood-right {
+        width: 400px;
+        height: 240px;
+        background-color: rgb(255, 113, 113);
+        padding: 20px;
+    }
+    
+    .collectionfood-right:hover {
+        /* task 2 */
+        color: white;
+        background-color: blue;
+    }
+    
     .collectionfood-right>h5 {
-        margin-top: 10px;
-    }
-    .collectionfood-right>h2 {
         margin-bottom: 20px;
-        font-weight: 900;
-        font-size: 30px;
     }
-}
-
-@media screen and (max-width: 580px) {
-    .collectionfood {
-        width: 100%;
-    }
-    .collectionfood-left {
-        padding: 10px 20px 10px 0px;
-    }
-    .img1,
-    .img2 {
-        height: 100px;
-    }
-    .collectionfood-left>.img1 img,
-    .collectionfood-left>.img2 img {
-        width: 100px;
-        height: 100px;
-    }
-    .collectionfood-left>.img3 img {
-        width: 100px;
-        height: 215px;
-    }
-    .collectionfood-right {
-        width: 200px;
-        height: 150px;
-        padding: 8px;
-    }
+    
     .collectionfood-right>h2 {
-        margin-bottom: 8px;
+        margin-bottom: 30px;
         font-weight: 900;
-        font-size: 20px;
+        font-size: 40px;
     }
-}
-
-@media screen and (max-width: 430px) {
-    .collectionfood-left {
-        padding: 6px 10px 6px 0px;
-    }
-    .img1,
-    .img2 {
-        height: 70px;
-    }
-    .collectionfood-left>.img1 img,
-    .collectionfood-left>.img2 img {
-        width: 80px;
-        height: 80px;
-    }
-    .collectionfood-left>.img3 img {
-        width: 80px;
-        height: 175px;
-    }
-    .collectionfood-right {
-        width: 250px;
-        height: 130px;
-        padding: 8px;
-    }
-    .collectionfood-right>h5 {
-        margin-bottom: 10px;
-    }
-    .collectionfood-right>h2 {
-        margin-bottom: 6px;
-        font-weight: 900;
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .collectionfood {
-        padding: 20px 20px;
-    }
-    .collectionfood-right {
-        width: 300px;
-        height: 130px;
-        padding: 8px;
-    }
-}
-
-@media screen and (max-width: 290px) {
-    .img1,
-    .img2 {
-        height: 50px;
-    }
-    .collectionfood-left>.img1 img,
-    .collectionfood-left>.img2 img {
-        width: 50px;
-        height: 50px;
-    }
-    .collectionfood-left>.img3 img {
-        width: 50px;
-        height: 115px;
-    }
-    .collectionfood-right {
-        width: 200px;
-        height: 100px;
-        padding: 4px;
-    }
-    .collectionfood-right>h2 {
-        margin-bottom: 3px;
-        font-weight: 900;
-        font-size: 10px;
-    }
-    .collectionfood-right>button img {
-        padding-left: 3px;
-    }
+    
     .collectionfood-right>button {
-        font-size: 8px;
+        background-color: rgb(255, 113, 113);
+        outline: none;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
-}
+    
+    .collectionfood-right>button:hover {
+        color: aliceblue;
+        background-color: blue;
+    }
+    
+    .collectionfood-right>button img {
+        padding-left: 5px;
+    }
+    
+    @media screen and (max-width: 820px) {
+        .collectionfood {
+            width: 100%;
+            padding-left: 30px;
+        }
+        .collectionfood-left {
+            padding: 10px 30px 10px 0px;
+        }
+        .collectionfood-right {
+            width: 300px;
+            height: 200px;
+            padding: 15px;
+        }
+        .collectionfood-right>h5 {
+            margin-top: 10px;
+        }
+        .collectionfood-right>h2 {
+            margin-bottom: 20px;
+            font-weight: 900;
+            font-size: 30px;
+        }
+    }
+    
+    @media screen and (max-width: 580px) {
+        .collectionfood {
+            width: 100%;
+        }
+        .collectionfood-left {
+            padding: 10px 20px 10px 0px;
+        }
+        .img1,
+        .img2 {
+            height: 100px;
+        }
+        .collectionfood-left>.img1 img,
+        .collectionfood-left>.img2 img {
+            width: 100px;
+            height: 100px;
+        }
+        .collectionfood-left>.img3 img {
+            width: 100px;
+            height: 215px;
+        }
+        .collectionfood-right {
+            width: 200px;
+            height: 150px;
+            padding: 8px;
+        }
+        .collectionfood-right>h2 {
+            margin-bottom: 8px;
+            font-weight: 900;
+            font-size: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 430px) {
+        .collectionfood-left {
+            padding: 6px 10px 6px 0px;
+        }
+        .img1,
+        .img2 {
+            height: 70px;
+        }
+        .collectionfood-left>.img1 img,
+        .collectionfood-left>.img2 img {
+            width: 80px;
+            height: 80px;
+        }
+        .collectionfood-left>.img3 img {
+            width: 80px;
+            height: 175px;
+        }
+        .collectionfood-right {
+            width: 250px;
+            height: 130px;
+            padding: 8px;
+        }
+        .collectionfood-right>h5 {
+            margin-bottom: 10px;
+        }
+        .collectionfood-right>h2 {
+            margin-bottom: 6px;
+            font-weight: 900;
+            font-size: 17px;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        .collectionfood {
+            padding: 20px 20px;
+        }
+        .collectionfood-right {
+            width: 300px;
+            height: 130px;
+            padding: 8px;
+        }
+    }
+    
+    @media screen and (max-width: 290px) {
+        .img1,
+        .img2 {
+            height: 50px;
+        }
+        .collectionfood-left>.img1 img,
+        .collectionfood-left>.img2 img {
+            width: 50px;
+            height: 50px;
+        }
+        .collectionfood-left>.img3 img {
+            width: 50px;
+            height: 115px;
+        }
+        .collectionfood-right {
+            width: 200px;
+            height: 100px;
+            padding: 4px;
+        }
+        .collectionfood-right>h2 {
+            margin-bottom: 3px;
+            font-weight: 900;
+            font-size: 10px;
+        }
+        .collectionfood-right>button img {
+            padding-left: 3px;
+        }
+        .collectionfood-right>button {
+            font-size: 8px;
+        }
+    }
